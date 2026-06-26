@@ -33,3 +33,14 @@
 -SERVICE --BUSINESS LOGIC
 -REPOSITORY --DATA ACCESS LAYER
 -MIDDLEWARE --REQUEST PROCESSING PIPELINE
+# non-relational databse
+mongodb
+caasandra
+redis
+dynamodb
+# Constraints in DataBase
+primary Key-- eg: Student_id,staff_id
+foreign key-- eg: department_id in student table
+unique -- eg: name
+check -- eg: salary>0
+default -- eg: timestamp: func.now()
