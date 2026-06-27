@@ -44,3 +44,20 @@ foreign key-- eg: department_id in student table
 unique -- eg: name
 check -- eg: salary>0
 default -- eg: timestamp: func.now()
+
+# modules
+sqlalchemy -- orm(object relational mapping)
+fastapi -- web framework
+uvicorn -- server for running fastapi
+application --> 'uvicron app.main:app --reload'
+psycopg2 -- postgresql driver
+pydantic -- 
+
+# concepts
+depends
+    Sessionmaker
+        to create a session with the databse
+    sessionlocal
+        to create a session with the database for a single request
+    declarative_base
+        to create a base class for all the models

@@ -2,7 +2,6 @@ from pydantic import BaseModel
 from typing import Optional
 from .job import JobResponse
 
-
 class CompanyBase(BaseModel):
     nmae:str
     email:str
