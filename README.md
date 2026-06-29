@@ -61,3 +61,9 @@ depends
         to create a session with the database for a single request
     declarative_base
         to create a base class for all the models
+
+pip install alembic
+alembic init alembic
+alembic -> env.py -> from imported model ->metadata data alembic.ini->sqlalchemy.url to postgresql database url -----> postgrel://user:password@host:port/database_name 
+alembic revision --autogenerate -m "initial migration"
+alembic upgrade head
