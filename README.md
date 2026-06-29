@@ -67,3 +67,5 @@ alembic init alembic
 alembic -> env.py -> from imported model ->metadata data alembic.ini->sqlalchemy.url to postgresql database url -----> postgrel://user:password@host:port/database_name 
 alembic revision --autogenerate -m "initial migration"
 alembic upgrade head
+
+
