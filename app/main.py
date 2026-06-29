@@ -1,10 +1,18 @@
 from fastapi import FastAPI
 
-from routers import company,job
-from database import Base,engine
+from routers import company, job
+from database import engine, init_db
 from models import company as company_model, job as job_model
-app=FastAPI()
+
+app = FastAPI()
 print(engine)
+
+
+
+@app.on_event("startup")
+def startup_event():
+    init_db()
+
 
 app.include_router(company.router)
 app.include_router(job.router)

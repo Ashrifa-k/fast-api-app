@@ -12,7 +12,7 @@ class JobCreate(JobBase):
 
 class JobUpdate(BaseModel):
     title: Optional[str] =None
-    salary: Optional[str] =None
+    salary: Optional[int] =None
     description: Optional[str] =None
     company_id: Optional[str] =None
 class JobResponse(JobBase):
